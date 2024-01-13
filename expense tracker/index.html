@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="balance" id="balance">
+            <h2>Your Balance</h2>
+            <p id="bln_amount">&#x20B9; 0.00</p>
+        </div>
+        <div class="amount">
+            <div class="income_div">
+                <p id="income" class="income">Income</p>
+                <span id="income_amount" class = "income_amount">+&#x20B9; 0.00</span>
+            </div>
+            <hr id="line">
+            <div class="expense_div">
+                <p id="expense" class="expense">Expense</p>
+                <span id="expense_amount" class="expense_amount">-&#x20B9; 0.00</span>
+            </div>
+        </div>
+        <p>History</p>
+        <div class="history" id="history">
+
+        </div>
+        <hr>
+        <p>Add new transaction</p>
+        <hr>
+       
+            <form method="post" name="amount_form" id="amount_form">
+                <div class="form_text">
+                    <label>Text</label>
+                    <input type="text" placeholder="Enter text...." id="txt" name="txt">
+                </div>
+                <div class="form_account">
+                    <label>Amount</label>
+                    <label>(negative-exponse, positive-income)</label>
+                    <input type="number" placeholder="Enter amount....." id="amt" name="amt">
+                </div>
+                <div class="form_btn">
+                    <input type="submit" value="Add transaction" id="tra">
+                </div>
+            </form>
+    
+    </div>
+    <script src="expense.js"></script>
+</body>
+</html>

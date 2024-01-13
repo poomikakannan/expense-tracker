@@ -1,0 +1,127 @@
+.container
+{
+    width: 30%;
+    margin: 0 auto;
+}
+h1
+{
+    text-align: center;
+}
+h2
+{
+    text-transform: uppercase;
+}
+#line
+{
+    border-color: black;
+    height: 40px;
+}
+#bln_amount
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+/* #income
+{
+    font-weight: 700;
+} */
+p
+{
+    font-weight: 700;
+}
+.balance
+{
+    line-height: 10px;
+}
+.amount
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: #FFF6F6;
+    box-shadow: 1px 1px 1px 1px gray;
+    line-height: 9px;
+}
+.form_text 
+{
+    display: grid;
+    line-height: 25px;
+}
+#txt
+{
+    width: 300px;
+    padding: 10px;
+}
+.form_account
+{
+    display: grid;
+    line-height: 25px;
+}
+#amt
+{
+    width: 300px;
+    padding: 10px;
+}
+#income_amount 
+{
+    color: rgb(133, 236, 15);
+    margin-left: 10px;
+}
+#expense_amount 
+{
+    color: red;
+}
+#tra
+{
+    background-color: rgb(238, 8, 188);
+    border: 0px;
+    width: 400px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#his_ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.history #his_ul #his_li
+{
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px grey;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+.history #his_ul #his_li.sub 
+{
+    border-right: 5px solid  #c0392b;
+}
+.history #his_ul #his_li.add
+{
+    border-right: 5px solid  #2ecc71;
+}
+#cross_btn
+{
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.history #his_ul #his_li:hover #cross_btn
+{
+    opacity: 1;
+}
